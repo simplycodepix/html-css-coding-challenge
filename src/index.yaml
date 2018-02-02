@@ -1,0 +1,5 @@
+ProjectTitle: coding-challenge
+
+PageList:
+- file: page.html
+  ready: 50
