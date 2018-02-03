@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700')
+
+=poppins
+    font-family: 'Poppins', 'Open Sans', sans-serif
+    font-weight: 700
+
+=bgcover
+    background:
+        size: cover
+        position: center center
+        repeat: no-repeat
+
+body
+    color: $black
+    font-size: 16px
+    line-height: 1.6
+    font-family: 'Open Sans', sans-serif
+
+
+a
+    text-decoration: none
+    color: $black
+
+.ch-wrapper
+    height: 100vh
+    position: relative
+    &:before
+        content: ''
+        width: 62.4%
+        left: -15%
+        top: 0
+        display: block
+        position: absolute
+        height: 100%
+        background: $orange
+        transform: skew(-30deg)
+
+.ch-container
+    max-width: 1170px
+    margin: 0 auto
+    padding: 0 15px
+    
+.ch-header
+    padding: 30px 50px
+    position: relative
+    z-index: 2
+    &--logo
+        padding-right: 25px
+        color: $white
+        font-size: 22px
+        +poppins 
+        &:after
+            content: ''
+            display: inline-block
+            height: 15px
+            width: 1px
+            background: $white
+            margin-left: 35px
+
+
+    &--nav
+        &__list
+            list-style-type: none
+            li
+                margin-right: 30px
+                font-size: 14px
+                font-weight: 600
+                a
+                    color: $white
+    &--links svg
+        margin-left: 10px
+    &--cta
+        display: inline-block
+        padding: 0.6rem 1.8rem
+        font-size: 12px
+        font-weight: 600
+        background: $black
+        border-radius: 25px
+        margin-left: 15px
+        color: $white
+
+.ch-hero
+    height: 500px
+    background: pink
+    +bgcover
+    padding: 60px 80px 40px
+    overflow: hidden
+    position: relative
+    background-image: url(https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7c3b42964cf6b52784c8c1a4e73fa97&auto=format&fit=crop&w=1050&q=80)
+    &:after
+        content: ''
+        display: block
+        width: 60%
+        height: 100%
+        position: absolute
+        top: 0
+        left: -13%
+        background: rgba(0,0,0,0.5)
+        transform: skew(-30deg)
+    &--content, &--bottom
+        z-index: 1
+        position: relative
+    &--title
+        font-size: 35px
+        max-width: 40%
+        color: $white
+        padding-right: 25px
+        margin-bottom: 35px
+        +poppins
+    &--control
+        width: 40px
+        height: 40px
+        cursor: pointer
+        border-radius: 50%
+        text-align: center
+        line-height: 38px
+        background: transparent
+        border: 1px solid $white
+        color: $white
+        margin-right: 15px
+    &--author
+        text-align: right
+        font-weight: 600
+        font-size: 12px
+        color: $white
+
+        &__name
+            font-size: 14px
+        &__prof
+        &__icon
+            margin-left: 15px
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background: $aqua
+            color: $white
+            text-align: center
+            line-height: 50px
+    &--links
+    &--cta
+        display: inline-block
+        padding: 0.6rem 2rem
+        background: transparent
+        border: 1px solid $white
+        color: $white
+        border-radius: 25px
+        font-size: 12px
+        font-weight: 600
+    &--trial
+        font-size: 14px
+        background: $red
+        border: 1px solid $red
+        margin-right: 25px
+        padding: 0.7rem 2rem
+
+
+.flex
+    display: flex
+    &-center
+        justify-content: center
+        align-items: center
+    &-space--between
+        justify-content: space-between
+    &-space--around
+        justify-content: space-around
+    &-align--center
+        align-items: center
+    &-direction--column
+        flex-direction: column
