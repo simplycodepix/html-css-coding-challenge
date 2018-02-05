@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700')
+
+=poppins
+    font-family: 'Poppins', 'Open Sans', sans-serif
+    font-weight: 700
+
+=bgcover
+    background:
+        size: cover
+        position: left center
+        repeat: no-repeat
+
+body
+    color: $black
+    font-size: 16px
+    line-height: 1.6
+    font-family: 'Open Sans', sans-serif
+
+
+
+
+
+
+a
+    text-decoration: none
+    color: $black
+
+
+.ch-wrapper
+    height: 100vh
+    background: $silver
+
+.ch-social
+    width: 450px
+    box-shadow: 0 0 25px 3px rgba(0,0,0,0.1)
+    padding: 25px 30px
+    background: $white
+    border-radius: 3px
+    &:hover
+        .ch-social--thumb
+            transform: translateY(-10px) scale(1.4)
+    &--title
+        margin-bottom: 5px
+        +poppins
+        span
+            color: $blue
+    &--author
+        position: relative
+        font-weight: 600
+        justify-content: flex-end
+        display: flex
+        align-items: center
+        width: 100%
+        &:before,&:after
+            content: ''
+            width: 10px
+            height: 1px
+            background: $black
+        &:before
+            margin-right: 10px
+        &:after
+            margin-left: 10px
+    &--left
+        width: 70%
+        text-align: right
+        padding-right: 25px
+    &--right
+        width: 30%
+    &--thumb
+        box-shadow: 0 0 25px 3px rgba(0,0,0,0.1)
+        margin-top: -50px
+        width: 100px
+        transition: all 150ms ease-in-out
+        margin-left: 10px
+        height: 100px
+        background: $black
+        +bgcover
+        background-image: url(https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c72676d70b3eb8d6748490069849320c&auto=format&fit=crop&w=1050&q=80)
+        border-radius: 3px
+    &--list
+        margin-top: 15px
+        li
+            margin-left: 15px
+            a
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                color: $white
+                display: block
+                text-align: center
+                line-height: 50px
+                font-size: 18px
+                tranistion: all 300ms ease-in-out
+                &:hover
+                    box-shadow: 0 0 15px rgba(0,0,0,0.2)
+    &--facebook
+        background: $blue
+    &--twitter
+        background: $teal
+    &--google
+        background: $red
+    &--instagram
+        background: $black
+
+
+.flex
+    display: flex
+    &-center
+        justify-content: center
+        align-items: center
+    &-space--between
+        justify-content: space-between
+    &-space--around
+        justify-content: space-around
+    &-align--center
+        align-items: center
+    &-align--end
+        align-items: flex-end
+    &-direction--column
+        flex-direction: column
+    &-end
+        justify-content: flex-end
