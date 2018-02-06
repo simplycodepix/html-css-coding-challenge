@@ -1,0 +1,91 @@
+// Basic Styles
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700')
+
+=poppins
+    font-family: 'Poppins', 'Open Sans', sans-serif
+    font-weight: 700
+
+body
+    color: $black
+    font-size: 16px
+    line-height: 1.6
+    font-family: 'Open Sans', sans-serif
+    padding: 25px 0
+
+a
+    text-decoration: none
+    color: $black
+    transition: all 200ms ease-in-out
+    &:hover
+        color: $orange
+
+
+header
+    max-width: 1170px
+    margin: 0 auto
+    padding: 0 15px
+    box-shadow: 0 0 3px rgba(0,0,0,0.5)
+    margin-bottom: 50px
+
+.flex
+    display: flex
+    &-center
+        justify-content: center
+        align-items: center
+    &-space--between
+        justify-content: space-between
+    &-space--around
+        justify-content: space-around
+    &-align--center
+        align-items: center
+    &-align--end
+        align-items: flex-end
+    &-direction--column
+        flex-direction: column
+    &-end
+        justify-content: flex-end
+
+
+.fr-header
+    height: 70px
+    padding: 0 25px
+    &--logo
+        +poppins
+        font-size: 21px
+    &--nav__list li
+        margin-left: 25px
+        font-size: 14px
+        font-weight: 600
+        a:hover
+            color: $orange
+
+.rf-header
+    padding: 25px
+    &--logo
+        text-align: center
+        display: block
+        +poppins
+        font-size: 45px
+        line-height: 1
+        margin-bottom: 15px
+    &--nav__list
+        li
+            margin: 0 15px
+            a
+                font-size: 14px
+                font-weight: 600
+
+.rh-header
+    width: 250px
+    height: 600px
+    align-items: center
+    padding: 25px
+    &--logo
+        +poppins
+        font-size: 21px
+    &--nav__list li
+        text-align: center
+        margin-bottom: 15px
+    &--copy
+        font-size: 12px
+        font-weight: 700
