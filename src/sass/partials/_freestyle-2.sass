@@ -1,0 +1,102 @@
+// Basic Styles
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700')
+
+=poppins
+    font-family: 'Poppins', 'Open Sans', sans-serif
+    font-weight: 700
+
+body
+    color: $black
+    font-size: 16px
+    line-height: 1.6
+    font-family: 'Open Sans', sans-serif
+    padding: 25px 0
+
+a
+    text-decoration: none
+    color: $black
+    transition: all 200ms ease-in-out
+    &:hover
+        color: $orange
+
+.flex
+    display: flex
+    &-center
+        justify-content: center
+        align-items: center
+    &-space--between
+        justify-content: space-between
+    &-space--around
+        justify-content: space-around
+    &-align--center
+        align-items: center
+    &-align--end
+        align-items: flex-end
+    &-direction--column
+        flex-direction: column
+    &-end
+        justify-content: flex-end
+
+
+.btn
+    display: block
+    margin-bottom: 45px
+    padding: 0.6em 2.5em
+    background: $navy
+    color: $white
+    &:hover
+        color: $white
+
+    &-1
+        background: $green
+        &:hover
+            box-shadow: 0 0 0 2px $white, 0 0 0 3px $green
+
+    &-2
+        background: $red
+        border-radius: 4px
+        transition: all 200ms ease-in-out
+        &:hover
+            background: lighten($red, 5%)
+            transform: translate(-2px, -2px)
+            color: $white
+            box-shadow: 2px 2px 0 1px darken($red, 5%)
+
+    &-3
+        border-radius: 4px
+        background: $orange
+        &:hover
+            background: $yellow
+            box-shadow: 0 0 0 2px $yellow inset, 0 0 0 4px $white inset
+
+    &-4
+        position: relative
+        overflow: hidden
+        &:after, &:before
+            content: ''
+            display: block
+            width: 50%
+            height: 100%
+            background: $red
+            position: absolute
+            top: 0
+            transition: all 300ms ease-in-out
+        &:after
+            right: -100%
+        &:before
+            left: -100%
+        &:hover:after
+            right: 0
+        &:hover:before
+            left: 0
+        &:hover
+            color: $white
+        span
+            position: relative
+            z-index: 2
+
+
+
+
+
+
