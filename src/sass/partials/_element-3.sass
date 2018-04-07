@@ -1,0 +1,60 @@
+.panel-item
+    height: 50%
+    background: pink
+    width: 44%
+    background: 
+        size: cover
+        position: center center
+        repeat: no-repeat
+
+    &:first-child, &:last-child 
+        width: 56%
+        background: $red
+    
+
+    &--block, &--social
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+
+    &--social
+        padding-right: 30px
+        padding-bottom: 30px
+
+    &--catalogue
+        padding-left: 140px
+        padding-top: 40px
+        background: $white
+        padding-right: 100px
+
+    &--title
+        margin-bottom: 15px
+
+
+
+.panel-social--list a
+    width: 30px
+    height: 30px
+    background: $black
+    display: block
+    margin-top: 15px
+    color: $white
+    text-align: center
+    line-height: 30px
+    font-size: 14px
+
+.panel-block
+    width: 130px
+    height: 130px
+    background: $black
+    padding: 25px 30px
+    color: $white
+
+    &--info
+        font-size: 14px
+        margin-bottom: 5px
+
+    &--title
+        font-size: 17px
+        line-height: 1.4
+        font-weight: 700

@@ -1,0 +1,78 @@
+.header
+    background: $black
+    color: $white
+    width: 90px
+    padding: 20px 0
+
+    &-logo
+        color: $white
+        font:
+            size: 18px
+            weight: 700
+    
+    &-copyrights
+        font-size: 14px
+
+    &-nav
+
+        &--list
+            li
+                margin-bottom: 25px
+                &:last-child
+                    margin-bottom: 0
+            a
+                color: $white
+                font-size: 15px
+
+.content
+    background: $orange
+    background:
+        size: cover
+        position: center center
+        repeat: no-repeat
+        image: url(https://images.unsplash.com/photo-1518893714388-8ed554f8471b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e40744b0e2d62616036343acda13c01a&auto=format&fit=crop&w=1050&q=80)
+    flex: 1
+    position: relative
+    z-index: 3
+    box-shadow: -2px 0 25px 3px rgba(0,0,0,0.2)
+    padding: 50px 100px
+    color: $white
+    text-align: center
+    &:after
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        background: rgba($black, 0.6)
+        display: block
+
+    &-title
+        font-size: 48px
+        color: rgba($white, 0.9)
+
+        span
+            color: $white
+
+    &-desc
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: 150px
+            height: 4px
+            //background: $white
+            margin: 30px auto 0
+.wrapper
+    position: relative
+    z-index: 9
+
+.cta
+    display: inline-block
+    padding: 0.6rem 1.8rem
+    background: $white
+    color: $black
+    border-radius: 3px
+    font-size: 14px
+    font-weight: 600
